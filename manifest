@@ -1,21 +1,15 @@
 {
-"manifest_version": 2,
-"name": "G Suite Certification app",
-"description": "Link to G Suite Certification website",
-"version": "1.1",
-"icons": {
-"128": "128.png"
-},
-"app": {
-"urls": [
-"http://certification.googleapps.com/app-info/"
-],
-"launch": {
-"web_url": "http://certification.googleapps.com/"
-}
-},
-"permissions": [
-"unlimitedStorage",
-"notifications"
-]
+
+    "name": "Woohui",
+    "description": "Search the keyword on the other pages",
+
+
+
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permisiions" : ["storage"]
+    
 }
