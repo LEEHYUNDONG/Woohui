@@ -1,15 +1,26 @@
 {
-
     "name": "Woohui",
     "description": "Search the keyword on the other pages",
-
-
 
     "version": "1.0",
     "manifest_version": 3,
     "background": {
-        "service_worker": "background.js"
+        "service_worker": ""
     },
-    "permisiions" : ["storage"]
-    
+    "permissions": ["storage", "activeTab", "scripting"],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "/images/extension.png",
+            "32": "/images/extension.png",
+            "48": "/images/extension.png",
+            "128": "/images/extension.png"
+          }
+      },
+      "icons": {
+        "16": "/images/extension.png",
+        "32": "/images/extension.png",
+        "48": "/images/extension.png",
+        "128": "/images/extension.png"
+      }
 }
