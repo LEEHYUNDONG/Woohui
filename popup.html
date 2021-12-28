@@ -1,13 +1,14 @@
-<!DOCTYPE html>
 <html>
 
 <head>
     <style>
         body {
-            width: 400px;
-            height: 250px;
+            align-items: center;
+            width: 300px;
+            height: 100px;
             padding: 1rem;
-            border-radius: 200px;
+            border-radius: 30px;
+            background-color: black;
         }
 
         textarea {
@@ -17,18 +18,52 @@
 
         text {
             font-size: 1rem;
+            align-items: center;
         }
+        button.img-button{
+            border:none;
+            background: transparent;
+            font-size: 1.125rem;
+        }
+    
+        .fa-search {
+            position: relative;
+            color: white;
+
+        }
+        .keyword{
+            border:none;
+            border-bottom:1px solid white;
+            outline:none;
+            background: transparent;
+            color:white;
+            width: 150;
+            font-style: "Malgun Gothic";
+
+        }
+        select{
+            border :none;
+            outline : none;
+            width : 80px;
+            font-weight: 200;
+            background: transparent;
+            font-size: 1.1rem;
+            color : white;
+        }
+
     </style>
-    <!-- <link rel="stylesheet" href="button.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="popup.js"></script>
 </head>
 
 <body>
-    <b><text>Search On</text></b>
-    <br><br>
-    <text>GitHub</text><br>
-    <text>StackOverFlow</text>
-    <!-- <button id="changeColor"></button> -->
-    <script src="popup.js"></script>
+    <form class='search'>
+        <button class="img-button" type="submit" name="click" value=""><i class="fa fa-search"></i></button><input
+            class='keyword' type='text' name='search' maxlength=255 value="" autocomplete="off">
+        <select class='SelectSearch' name='WhichSearch'>
+            <option id='google' value='google'>Google</option>
+            <option id='naver' value='google'>Naver</option>
+        </select>
+    </form>
 </body>
-
 </html>
