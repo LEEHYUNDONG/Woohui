@@ -16,6 +16,8 @@
 <div align=center><h3> ⁉️ Problem </hr> </div>
 
 1. 처음에 이벤트 핸들러를 사용할줄 몰라서 버튼이 클릭될 때 새로운 탭에서 페이지가 열리게 하는 것을 좀 오래 고민함. => getByElementId를 사용하여 이벤트 리스너로 클릭 시 함수가 동작하게 한다.
+<br><br>
+***
 
 <div align=center><h3> 참고 사이트</div></h3>
 
