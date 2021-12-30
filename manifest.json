@@ -4,10 +4,8 @@
 
     "version": "1.0",
     "manifest_version": 3,
-    "background": {
-        "service_worker": ""
-    },
-    "permissions": ["storage", "activeTab", "scripting"],
+    "permissions": ["storage", "activeTab", "scripting", "tabs"],
+    "host_permissions" : ["http://*/*", "https://*/*"],
     "action": {
         "default_popup": "popup.html",
         "default_icon": {
