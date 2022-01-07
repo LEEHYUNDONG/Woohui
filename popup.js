@@ -16,6 +16,8 @@ function Searching() {
             urls="https://stackoverflow.com/search?q=";
         } else if(engine==="velog") {
             urls="https://velog.io/search?q=";
+        } else if(engine==="youtube") {
+            urls="https://www.youtube.com/results?search_query=";
         }
         urls+=text;
         chrome.tabs.create({url: urls});
